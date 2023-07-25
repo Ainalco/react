@@ -1,0 +1,3 @@
+styling with react: inline,internal external css 
+if you use public folder for external css then use just '<link rel="stylesheet" href="style.css">'
+if you use src folder then import css like "import './index.css'"
