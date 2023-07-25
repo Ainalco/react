@@ -18,16 +18,24 @@ const headingStyle={
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<div>
+  <div>
   <h1 style={headingStyle}>To do App</h1>
   <h3 className='secondheadingStyle'>{todoTitle}</h3>
   <p className='paragraphStyle'>{todoDescription}</p>
   <p style={{
-  backgroundColor:"purple",
+  backgroundColor:"yellow",
   color:"white",
   textAlign:"center",
   padding:"15px",
   fontSize:"16px"
 
 }}>{dateName+'/'+dateMonth+'/'+curentYear}</p>
+</div>
+<h1 style={headingStyle}>Todo App</h1>
+<div className='card'>  
+  <h3 className='cardTitle'>{todoTitle}</h3>
+  <p className='cardDesc'>{todoDescription}</p>
+  <p className='cardFooter'>{dateName+'/'+dateMonth+'/'+curentYear}</p>
+</div>
   </div>);
 

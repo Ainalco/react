@@ -1,7 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .secondheadingStyle{
     background-color: blue;
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 14px;
+}
+.card{
+    background-color:#ffda77;
+    box-shadow: 2px 4px 4px gray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 390px;
+    display: inline-block;
+}
+
+.cardTitle{
+    background-color: rgb(95, 95, 95);
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.cardDesc{
+    text-align:justify;
+    margin-bottom: 5px;
+}
+
+.cardFooter{
+    text-align: center;
+    font-weight: bold;
 }
