@@ -1,14 +1,20 @@
-const todoTitle="Hello World";
-const todoDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 const date=new Date();
 const curentYear=date.getFullYear();
 const dateName=date.getDate();
 const dateMonth=date.getMonth();
 
-function Card(){
-  return <div className='card'>  
-  <h3 className='cardTitle'>{todoTitle}</h3>
-  <p className='cardDesc'>{todoDescription}</p>
+//distructureing way
+//for array use third bracket and object use second brackt
+// const name=["dog","cat"];
+// name[0];
+// name[1];
+// const [dog,cat]=name;
+
+function Card(props){
+  const {titleTxt,descText}=props;
+   return <div className='card'>  
+  <h3 className='cardTitle'>{titleTxt}</h3>
+  <p className='cardDesc'>{descText}</p>
   <p className='cardFooter'>{dateName+'/'+dateMonth+'/'+curentYear}</p>
 </div>
 }
