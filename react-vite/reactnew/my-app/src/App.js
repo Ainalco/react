@@ -2,6 +2,7 @@ import React from 'react';
 // import Stylerule from './components/Stylerule';
 import Card from './components/Card';
 import Data from './data.json';
+import List from "./components/UniqueList/list"
 
 //let items=[];
 // for(let x=0;x<Data.length;x++){
@@ -16,6 +17,9 @@ function App(){
             {/* <Stylerule /> */}
            {/* {items} */}
            {Data.map((item, index) => <Card key={index} titleTxt={item.title} descText={item.desc} />)};
+           <>
+           <List />
+           </>
     </div>
 
 }
