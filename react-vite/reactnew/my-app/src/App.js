@@ -3,6 +3,7 @@ import React from 'react';
 import Card from './components/Card';
 import Data from './data.json';
 import List from "./components/UniqueList/list"
+import NestedList from "./components/NestedList/NestedList"
 
 //let items=[];
 // for(let x=0;x<Data.length;x++){
@@ -19,6 +20,9 @@ function App(){
            {Data.map((item, index) => <Card key={index} titleTxt={item.title} descText={item.desc} />)};
            <>
            <List />
+           </>
+           <>
+           <NestedList />
            </>
     </div>
 
