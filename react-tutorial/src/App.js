@@ -18,7 +18,7 @@ const App = () => {
                     </a>{' '}
                     channel
                 </p>
-                <p className="right">Developed with &hearts; by Anisul Islam</p>
+                <p className="right">Developed with &hearts; by Ainal Haque</p>
             </footer>
         </div>
     );
