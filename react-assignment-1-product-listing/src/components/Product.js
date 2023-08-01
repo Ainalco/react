@@ -3,8 +3,8 @@
 import React from 'react';
 
 const Product = (product) => {
-
-  return (
+  console.log(product);
+   return (
       <article className="product">
       <img src={product.product.image} alt="image" />
       <div className="product__details">
