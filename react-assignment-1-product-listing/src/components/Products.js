@@ -5,13 +5,10 @@ import Product from './Product'
 
 
   const Products=({products})=>{
+    //console.log(products);
     return (
         <div className="products">
-         {
-            products.map((product,id) => (
-               <Product key={id} product={product} className="product-card" />
-            ))
-         }
+             {products.map((products) => <Product key={products.id} product={products} className="product-card"/>)};
           </div>
     ); 
                        
