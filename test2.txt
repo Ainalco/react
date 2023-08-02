@@ -1,1 +1,5 @@
 Test change
+
+React App create command: npx create-react-app reacttutorial-classcomponent
+
+reacttutorial-classcomponent is my directory
