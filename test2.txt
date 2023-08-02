@@ -3,3 +3,30 @@ Test change
 React App create command: npx create-react-app reacttutorial-classcomponent
 
 reacttutorial-classcomponent is my directory
+
+
+functional compnent create shortcart key: type rfc the press enter.
+
+same file e functional component no net to import.only type the component name.
+like :
+function Welcome(){
+	return <h2>Welcome</h2>;
+} 
+
+then use in expoert return
+
+export default function app(){
+	return (
+	<div>
+           <Welcome />
+	</div>
+	)
+}
+
+functional start with capital letter
+another way is :
+function Welcome(){
+	return React.createElement("<h1>",{},"Welcome");
+} 
+ 
+first parameter is which html tag we use the {} means props and finally message .
