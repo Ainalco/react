@@ -1,7 +1,7 @@
 import React from 'react';
 import Card1 from './components/Card1';
 import Card2 from './components/Card2';
-
+import Card3 from './components/Card3';
 function Welcome(){
 	return <h2>Welcome</h2>;
   //same work just different way
@@ -36,6 +36,7 @@ function App() {
     <Welcome2 />
     <Showinfo />
     <Showinfo2 />
+    <Card3 />
   </div>
   );
 }

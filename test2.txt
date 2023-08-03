@@ -35,3 +35,6 @@ first parameter is which html tag we use the {} means props and finally message 
 first install ES7 React/Redux/GraphQL/React-Native snippets
 the use some shortcart like: to create functional component use short cart just type rfc then enter
 if you create class component then use or type rcc then press enter
+Chrome web store  extension then serach react developer tools and  install and use react on browser
+
+react Icon use just search reach icon and go to https://react-icons.github.io/react-icons/ and install it
