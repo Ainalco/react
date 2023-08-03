@@ -1,11 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { FaFacebook, FaBars } from "react-icons/fa";
+import '../index';
 
-export default class Card3 extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+export default function Card3() {
+  return (
+    <div>
+      <h2>Welcome to Font Awesome Icon</h2>
+      <span>
+        <FaFacebook className="icon" />
+      </span>
+      <span>
+        <FaBars className="icon" />
+      </span>
+    </div>
+  )
 }
+ 
