@@ -1,2 +1,18 @@
 dfdsg
  ggd
+
+Commands for method 7 - 
+
+net stop wuauserv
+net stop cryptsvc
+net stop bits
+net stop msiserver
+
+ren C:\Windows\SoftwareDistribution SoftwareDistribution
+ren C:\Windows\System32\Catroot2 Ccatroot
+
+net start wuauserv
+net start cryptsvc
+net start bits
+net start msiserver
+
