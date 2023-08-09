@@ -5,6 +5,7 @@ import EVENTHANDLER_CLASS from './EventHandler_Class/index'
 import EVENTBINDING from './EventBinding/index'
 import HOOKSUSESTATE from './HooksUsestate/index1'
 import HOOKSUSESTATE2 from './HooksUsestate/index2'
+import FORM from './components/Form/Form'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <EVENTBINDING />
       <HOOKSUSESTATE />
       <HOOKSUSESTATE2 />
+      <FORM />
     </div>
   )
 }
