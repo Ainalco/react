@@ -6,6 +6,7 @@ import EVENTBINDING from './EventBinding/index'
 import HOOKSUSESTATE from './HooksUsestate/index1'
 import HOOKSUSESTATE2 from './HooksUsestate/index2'
 import FORM from './components/Form/Form'
+import FORM2 from './components/Form/Form2'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <HOOKSUSESTATE />
       <HOOKSUSESTATE2 />
       <FORM />
+      <FORM2 />
     </div>
   )
 }
