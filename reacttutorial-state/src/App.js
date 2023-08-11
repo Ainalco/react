@@ -9,12 +9,22 @@ import HOOKSUSESTATE2 from './HooksUsestate/index2';
 import FORM from './components/Form/Form';
 import FORM2 from './components/Form/Form2';
 import CHILD from './components/StateLifting/Child';
+import CHILDTODO from './ChildTodo';
+
+const Todo=(props)=>{
+  return(
+    <div>{props.title}</div>
+  );
+};
 
 export default function App() {
   const data="I am from Parent (App)";
   const handleChildData=(childData)=>{
       console.log("App:"+childData);
   }
+  const handleChildTodo=(childData)=>{
+    console.log("App2:"+childData);
+}
   return (
     <div>
       <STATE />
@@ -26,6 +36,8 @@ export default function App() {
       <FORM />
       <FORM2 />
       <CHILD data={data} onChildData={handleChildData}/>
+      <Todo title="Learn React.ja"/>
+      <CHILDTODO onChildTodaData={handleChildTodo}/>
     </div>
   )
 }
