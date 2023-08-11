@@ -38,3 +38,5 @@ if you create class component then use or type rcc then press enter
 Chrome web store  extension then serach react developer tools and  install and use react on browser
 
 react Icon use just search reach icon and go to https://react-icons.github.io/react-icons/ and install it
+
+end
