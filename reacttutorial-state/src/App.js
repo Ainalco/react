@@ -9,6 +9,7 @@ import HOOKSUSESTATE2 from './HooksUsestate/index2';
 import FORM from './components/Form/Form';
 import FORM2 from './components/Form/Form2';
 import CHILD from './components/StateLifting/Child';
+import HOME from './components/StateLifting/Home';
 import CHILDTODO from './ChildTodo';
 
 const Todo=(props)=>{
@@ -38,6 +39,7 @@ export default function App() {
       <CHILD data={data} onChildData={handleChildData}/>
       <Todo title="Learn React.ja"/>
       <CHILDTODO onChildTodaData={handleChildTodo}/>
+      <HOME />
     </div>
   )
 }
