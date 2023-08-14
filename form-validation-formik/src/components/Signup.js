@@ -2,7 +2,7 @@ import React from "react";
 import * as yup from "yup";
 import { useFormik } from "formik";
 
-// name, email, password
+// name, email, password;
 const Signup = () => {
   const formik = useFormik({
     initialValues: {
