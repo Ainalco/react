@@ -13,12 +13,12 @@ const Signup = () => {
     validationSchema: yup.object({
       name: yup
         .string()
-        .min(2, "name must have atleast 2 characters")
+        .min(3, "name must have at least 3 characters")
         .required(),
       email: yup.string().email().required(),
       password: yup
         .string()
-        .min(6, "password must have atleast 6 characters")
+        .min(8, "password must have atleast 8 characters")
         .required(),
     }),
     onSubmit: (values, { resetForm }) => {
