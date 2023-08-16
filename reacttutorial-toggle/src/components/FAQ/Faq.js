@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react';
+import style from './faq.module.css';
 
 const Faq = ({id,title,desc}) => {
+    const [toggle, setToggle]=useState(false);
   return (
-    <article>
+    <article className={style.faq}>
       <div>
         <h4>{title}</h4>
-        <button>+</button>
+        <button onClick={()=>{setToggle(!toggle)}}>{toggle ? '-':'+'}</button>
       </div>
+      {toggle && 
+      <p>{desc}</p>
+      }
     </article>
   )
 }
