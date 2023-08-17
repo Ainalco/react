@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint no-unused-vars : "off" */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -10,6 +12,7 @@ const Todos = (props) => {
       {todos.map((todo) => (
         <Todo key={todo.id} todo={todo} />
       ))}
+      
     </section>
   );
 };

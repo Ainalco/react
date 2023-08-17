@@ -1,16 +1,28 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/prop-types */
+/* eslint no-unused-vars : "off" */
+
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 
 const NewTodo = (props) => {
-  const [todo, setTodo] = useState();
+  const [todo, setTodo] = useState({ title: "", desc: "" });
+  const { title, desc } = todo;
 
   // for handling todo state changes
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const name = e.target.name;
+    setTodo((oldTodo) => {
+      return { ...oldTodo, [name]: e.target.value };
+    });
+  };
 
   // submit the form and send newTodo in App.js
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(todo);
+     props.onAddTodo(todo);
     const newTodo = {
       id: uuidv4()
     };
@@ -49,7 +61,7 @@ const NewTodo = (props) => {
               required></textarea>
           </div>
           <div className="field-group">
-            <button className="btn" type="submit">
+            <button className="btn" type="submit" >
               Send
             </button>
           </div>
