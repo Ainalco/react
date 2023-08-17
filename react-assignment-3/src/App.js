@@ -1,3 +1,7 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/prop-types */
+/* eslint no-unused-vars : "off" */
+
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -21,12 +25,20 @@ const App = () => {
   const [todos, setTodos] = useState(todosData);
 
   // get the newTodo from NewTodo.js here inside this function
-  const handleAddTodo = () => {};
+  
+  const handleAddTodo = (todo) => {
+    //console.log(todo);
+    setTodos((prevTodos) => {
+      return [...prevTodos, { id: uuidv4(), todo }];
+    });
+  };
+
+  
 
   return (
     <div>
-      <NewTodo />
-      <Todos />
+      <NewTodo onAddTodo={handleAddTodo} />
+      {todos && <Todos todos={todos} />}
     </div>
   );
 };
