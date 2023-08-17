@@ -1,9 +1,10 @@
 import React from 'react';
+import UseEffect from './components/useEffect/UseEffect';
 
-function App() {
+export default function App() {
   return (
-    <div>Hello</div>
+    <div>
+      <UseEffect />
+    </div>
   );
 }
-
-export default App;
