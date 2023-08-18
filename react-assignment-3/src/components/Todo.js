@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 const Todo = (props) => {
  
   const { title, desc } = props.todo;
-  const { id } = props;
+  
   //console.log(props);
   return (
     <article className="todo">
@@ -19,8 +19,7 @@ const Todo = (props) => {
 };
 
 Todo.propTypes = {
-  todo: PropTypes.shape({
-    id:PropTypes.number,
+  todo: PropTypes.shape({  
     title: PropTypes.string,
     desc: PropTypes.string
   })

@@ -16,17 +16,20 @@ const NewTodo = (props) => {
     setTodo((oldTodo) => {
       return { ...oldTodo, [name]: e.target.value };
     });
+    
   };
 
   // submit the form and send newTodo in App.js
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(todo);
-     props.onAddTodo(todo);
+    e.preventDefault();    
     const newTodo = {
-      id: uuidv4()
+      id: uuidv4(),
+      title: todo.title,
+      desc: todo.desc
     };
 
+    props.onAddTodo(newTodo);
+    
     // for reset todo state
     setTodo({
       title: '',

@@ -26,11 +26,12 @@ const App = () => {
 
   // get the newTodo from NewTodo.js here inside this function
   
-  const handleAddTodo = (todo) => {
+  const handleAddTodo = (newTodo) => {
     //console.log(todo);
     setTodos((prevTodos) => {
-      return [...prevTodos, { id: uuidv4(), todo }];
+      return [...prevTodos, newTodo];
     });
+    
   };
 
   
