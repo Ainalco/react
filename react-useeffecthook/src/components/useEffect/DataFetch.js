@@ -13,8 +13,8 @@ const DataFetch = () => {
           return res.json()
         }
       })
-      .then((data) => {
-        setTodos(data);
+      .then((todos) => {
+        setTodos(todos);
         setIsLoading(false);
         setError(null);
         //console.log(todos);
