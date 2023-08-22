@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import User from './User';
 
 const Users = () => {
-    const [userName, setUserName]=useState("Kamal");
-    const [userId, setUserId]=useState("101");
+    const [user, setUser]=useState({id:123456,name:"Ainal"});
   return (
     <>
-      <User userName={userName} userId={userId} />
+      <User user={user}/>
     </>
   )
 }
