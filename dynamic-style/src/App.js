@@ -2,6 +2,7 @@ import React, { useEffect, useState,Fragment } from 'react';
 import './App.css';
 import TABLE from './components/Table';
 import Users from './components/PropsType/Users';
+import LifeCycle from './components/Lifecycle/Lifecycle';
 
 function App() {
   const [name,setName]=useState("");
@@ -36,6 +37,7 @@ function App() {
       </div>
       <TABLE />
       <Users />
+      <LifeCycle />
     </div>
   );
 }
