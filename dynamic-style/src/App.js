@@ -3,6 +3,7 @@ import './App.css';
 import TABLE from './components/Table';
 import Users from './components/PropsType/Users';
 import LifeCycle from './components/Lifecycle/Lifecycle';
+import UserFrom from './components/REFExample/UserFrom';
 
 function App() {
   const [name,setName]=useState("");
@@ -38,6 +39,7 @@ function App() {
       <TABLE />
       <Users />
       <LifeCycle />
+      <UserFrom />
     </div>
   );
 }
