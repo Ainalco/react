@@ -5,6 +5,8 @@ import Users from './components/PropsType/Users';
 import LifeCycle from './components/Lifecycle/Lifecycle';
 import UserFrom from './components/REFExample/UserFrom';
 import USERFORM2 from './components/HOOK/UserRefExample/UserForm';
+import UseReducer from './components/HOOK/UserRefExample/UseReducer';
+
 
 function App() {
   const [name,setName]=useState("");
@@ -42,6 +44,7 @@ function App() {
       <LifeCycle />
       <UserFrom />
       <USERFORM2 />
+      <UseReducer />
     </div>
   );
 }
