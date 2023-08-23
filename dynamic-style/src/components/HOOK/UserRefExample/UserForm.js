@@ -7,6 +7,7 @@ const UserForm = () => {
         event.preventDefault();
         const userName=userNameRef.current.value;
         const password=passwordRef.current.value;
+        userNameRef.current.style.color="red"
         console.log(userName,password);
     }
   return (
@@ -21,9 +22,10 @@ const UserForm = () => {
                 <input type='text' id='password' ref={passwordRef}/>
             </div>
             <button type='submit'>Register</button>
-            <br/>
-            <hr/>
+           
         </form>
+        <br/>
+        <hr/>
     </div>
   )
 }
