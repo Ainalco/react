@@ -25,7 +25,8 @@ export default class UserFrom extends Component {
                 <input type='text' id='password'/>
             </div>
             <button type='submit'>Register</button>
-            
+            <br/>
+            <hr/>
         </form>
       </div>
     )
