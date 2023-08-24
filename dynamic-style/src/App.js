@@ -6,7 +6,7 @@ import LifeCycle from './components/Lifecycle/Lifecycle';
 import UserFrom from './components/REFExample/UserFrom';
 import USERFORM2 from './components/HOOK/UserRefExample/UserForm';
 import UseReducer from './components/HOOK/UserRefExample/UseReducer';
-
+import Component1 from './components/PROP_DRILLING/Component1';
 
 function App() {
   const [name,setName]=useState("");
@@ -45,6 +45,9 @@ function App() {
       <UserFrom />
       <USERFORM2 />
       <UseReducer />
+      <br/>
+      <hr/>
+      <Component1 />
     </div>
   );
 }
