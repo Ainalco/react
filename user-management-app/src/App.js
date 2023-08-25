@@ -10,10 +10,13 @@ function App() {
   const handleDleteUser=(id)=>{
     const filteredUsers = users.filter(user =>user.id!==id); 
     setUsers(filteredUsers);
+  };
+  const handleAddNewUser=(newUser)=>{
+    setUsers((prevUsers)=>[...prevUsers,newUser]);
   }
   return (
     <div>
-      <NewUser />
+      <NewUser handleAddNewUser={handleAddNewUser} />
       <Users users={users} handleDleteUser={handleDleteUser}/>
     </div>
   );
