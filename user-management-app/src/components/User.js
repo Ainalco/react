@@ -1,9 +1,9 @@
 import React from 'react'
 
-const User = ({user}) => {
+const User = ({user,handleDleteUser}) => {
     const {id, username}=user;
-    const handleDelete =(id)=>{
-        console.log(id);
+    const handleDelete =(id)=>{        
+        handleDleteUser(id);
     };
   return (
     <article className='user'>
