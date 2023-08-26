@@ -5,12 +5,14 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Error from './pages/Error';
+import Navbar from './components/Navbar';
 
 import "./App.css";
 
 function App() { 
   return (   
     <BrowserRouter>
+        <Navbar />
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
