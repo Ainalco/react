@@ -1,0 +1,18 @@
+1. first install json server
+npm i json-server
+2.create folder in your project root and name it database
+3.in database folder create db.json file and some data on it like:
+
+ {
+    "users" : [
+
+        {"id":1,"name":"Rakib","email":"rakib@gmail.com"},
+        {"id":2,"name":"Mintu","email":"mintu@gmail.com"},
+        {"id":3,"name":"Piash","email":"piash@gmail.com"},
+        {"id":4,"name":"Tuhin","email":"tuhin@gmail.com"},
+        {"id":5,"name":"Mubin","email":"mubin@gmail.com"}
+    ]
+ }
+
+4. finally create server.command is: p=port number, w=watch
+npx json-server -p 3001 -w database/db.json

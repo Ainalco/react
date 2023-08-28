@@ -1,0 +1,10 @@
+ {
+    "users" : [
+
+        {"id":1,"name":"Rakib","email":"rakib@gmail.com"},
+        {"id":2,"name":"Mintu","email":"mintu@gmail.com"},
+        {"id":3,"name":"Piash","email":"piash@gmail.com"},
+        {"id":4,"name":"Tuhin","email":"tuhin@gmail.com"},
+        {"id":5,"name":"Mubin","email":"mubin@gmail.com"}
+    ]
+ }
