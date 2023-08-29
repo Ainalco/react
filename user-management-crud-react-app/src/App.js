@@ -85,8 +85,8 @@ const App = () => {
                 {error ? <p>{error}</p> : <Users users={users} onDeleteUser={deleteUser} onEditUser={editUser} />}
             </main>
             <footer>
-                <p>Copyright By Anisul Islam 2023</p>
-                <p>Developed with &hearts; by Anisul Islam</p>
+                <p>2023</p>
+                <p>Testing ; by Ainal</p>
             </footer>
         </div>
     );
