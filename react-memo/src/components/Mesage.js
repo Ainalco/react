@@ -1,10 +1,13 @@
 import React, { memo } from 'react'
 
-const Mesage=({numberofMessage}) => {
+const Mesage=({numberofMessage,onHandleIncrement}) => {
     
         console.log("Message Rendering");
       return (
-        <p>Send {numberofMessage} Message</p>
+        <div>
+            <p>Send {numberofMessage} Message</p>
+            <button onClick={onHandleIncrement}>Add Message</button>
+        </div>
       )
     };
 
